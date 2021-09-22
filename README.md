@@ -19,8 +19,13 @@
 
 # Firmware development
 * the STM32F103C8T6 is very popular
-  * to flash and debug the firmware a STLinkV2 clone can be bought 
+  * to flash and debug the firmware, a STLinkV2 clone can be bought on Aliexpress for 3€
+  * software tools do flash, debug, edit and build the firmware: OpenOCD, GCC and Visual Code Studio
+  * there are many motor controllers based on STM32F103C8T6, like the ones on hoverboard, electric unicycles, ebikes
+  * there are OpenSource firmware to implement motor control FOC on STM32F103 or other similar STM32:
+    *  [EBike motor controller Lishui)(https://github.com/EBiCS/EBiCS_Firmware)
 
-JTAG pins on STM32F103
+* JTAG pins to flash and debug the firmware are available on the board and 3 wires must be soldered:
+* GND
 * 34 | DIO
 * 37 | DCLK
